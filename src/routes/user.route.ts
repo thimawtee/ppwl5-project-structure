@@ -40,7 +40,7 @@ export const userRoutes = new Elysia()
 
 
   .get("/", () => {
-        const users = userService.getAll();
+        const users = userService.getAllUsers();
         return htmlResponse(userView(users));
       })
 

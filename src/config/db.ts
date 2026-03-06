@@ -7,8 +7,9 @@
 ========================= */
 
 import { Database } from "bun:sqlite";
+import { env } from "./env";
 
-const dbFile = process.env.DB_FILE || "database.sqlite";
+const dbFile = env.DB_FILE;
 
 export const db = new Database(dbFile);
 

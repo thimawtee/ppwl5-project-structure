@@ -6,7 +6,6 @@
     3. jadika id opsional -> id?: number
    ========================= */
 
-import { env } from "../config/env";
 export interface User {
   id?: number;
   name: string;
